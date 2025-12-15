@@ -68,7 +68,7 @@ form span {
 form input {
   width: 75%;
   height: auto;
-  background-color: yellow;
+  background-color: #191c27;
 } 
 form button {
   align-self: center;

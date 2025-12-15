@@ -233,6 +233,9 @@ export default function Users() {
    
   useEffect(() => {
     getUsers();
+    if(!loggedInUser) {
+      navigate("/login")
+    }
    const socket = createSocketConnection();
    socketRef.current = socket
     return () => {
