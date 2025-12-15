@@ -207,7 +207,7 @@ export default function Users() {
     
     try {
       
-      const res = await fetch("http://localhost:5491/users" , {
+      const res = await fetch("https://react-messaging-app-backend.onrender.com/users" , {
         credentials: "include"
       });
      if(!res.ok) {
@@ -268,7 +268,7 @@ socketRef.current.on("update-offline", ({userId, userStatus}) => {
 
   async function logOut() {
     try {
-      const loggedOut = await fetch("http://localhost:5491/logout", {
+      const loggedOut = await fetch("https://react-messaging-app-backend.onrender.com/logout", {
         method: "POST",
         credentials: "include"
       });

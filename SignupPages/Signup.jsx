@@ -30,7 +30,7 @@ export default function Signup() {
   async function saveUser(e) {
     e.preventDefault()
     try {
-      const isSaved = await fetch("https://chat-app-backend-2-ab1j.onrender.com/signup", {
+      const isSaved = await fetch("https://react-messaging-app-backend.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

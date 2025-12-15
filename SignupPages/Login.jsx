@@ -67,7 +67,7 @@ const socket = createSocketConnection();
   const dispatch = useDispatch()
   const [emailId, setEmailId] = useState("");
   const [password, setPassword] = useState("");
-  const BASE_URL = "http://localhost:5491" || "https://chat-app-backend-2-ab1j.onrender.com";
+  const BASE_URL = "https://react-messaging-app-backend.onrender.com";
   const navigate = useNavigate();
 
   async function loggedIn() {

@@ -177,7 +177,7 @@ export default function Userchats() {
   const isIdDifferent = targetUserId?.toString() !== userId?.toString();
   async function getUser() {
     try {
-      const isUser = await fetch("http://localhost:5491/chat/" + targetUserId, {
+      const isUser = await fetch("https://react-messaging-app-backend.onrender.com/chat/" + targetUserId, {
         credentials: "include"
       })
       if (!isUser.ok) {
